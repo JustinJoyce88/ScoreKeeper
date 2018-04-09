@@ -2,29 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Score Keeper</title>
-    <link rel="stylesheet" href="scoreKeeper.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700" rel="stylesheet"> 
+  <link rel="stylesheet" href="scoreKeeper.css">
 </head>
 
 <body>
+  <div class="grid-container full text-center">
+    <div class="grid-x">
+      <div class="cell">
+        <h1>
+          <span id="p1Display">0</span> to
+          <span id="p2Display">0</span>
+        </h1>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <p>Playing to:
+          <span>5</span>
+        </p>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell small-5"></div>
+      <div class="cell small-2">
+        <input type="number">
+      </div>
+      <div class="cell small-5"></div>
+    </div>
+    <div class="grid-x">
+      <div class="cell auto">
+        <button class="button plus-one" id="p1">+1</button>
+      </div>
+      <div class="cell auto">
+        <button class="button plus-one" id="p2">+1</button>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <button class="button" id="resetButton">Reset</button>
+      </div>
+    </div>
+  </div>
 
-    <h1>
-        <span id="p1Display">0</span> to
-        <span id="p2Display">0</span>
-    </h1>
-
-    <p>Playing to:
-        <span>5</span>
-    </p>
-
-    <input type="number">
-    <button id="p1">Player One</button>
-    <button id="p2">Player two</button>
-    <button id="resetButton">Reset</button>
-    <script src="scoreKeeper.js"></script>
+  <script src="scoreKeeper.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 </body>
 
 </html>
